@@ -147,6 +147,7 @@ void questao3() {
 
 // Função para resolver a quarta questão
 void questao4() {
+    int *matricula;
     // Array de alunos com suas respectivas matrículas, nomes e notas
     aluno alunos[] = {
         {61810, "Isabela", {6.0, 6.5, 5.5}},
@@ -194,7 +195,7 @@ void questao4() {
             ordena(alunos, tamanho);
             break;
         case 4:
-            matriculasAprovados(alunos, tamanho);
+            *matricula = matriculasAprovados(alunos, tamanho);
             break;
         default:
             printf("Opção inválida.\n");
